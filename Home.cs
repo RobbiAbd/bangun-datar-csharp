@@ -33,14 +33,45 @@ namespace BangunDatar
             f.Show();
         }
 
-        private void btnPersegi_Click(object sender, EventArgs e)
-        {
-            loadForm(new SquareForm());
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnPersegi_Click(object sender, EventArgs e)
+        {
+            labelTitle.Text = (sender as Button).Text;
+            loadForm(new SquareForm());
+        }        
+
+        private void btnPersegiPanjang_Click(object sender, EventArgs e)
+        {
+            labelTitle.Text = (sender as Button).Text;
+            loadForm(new RectangleForm());
+        }
+
+        private void btnSegitiga_Click(object sender, EventArgs e)
+        {
+            labelTitle.Text = (sender as Button).Text;
+            loadForm(new TriangleForm()); 
+        }
+
+        private void btnLingkaran_Click(object sender, EventArgs e)
+        {
+            labelTitle.Text = (sender as Button).Text;
+            loadForm(new CircleForm());
+        }
+
+        private void btnTrapesium_Click(object sender, EventArgs e)
+        {
+            labelTitle.Text = (sender as Button).Text;
+            loadForm(new TrapezoidForm());
+        }
+
+        private void btnAbout_Click(object sender, EventArgs e)
+        {
+            labelTitle.Text = (sender as Button).Text;
+            loadForm(new AboutForm());
         }
     }    
 }

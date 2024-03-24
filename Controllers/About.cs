@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BangunDatar.Controllers
 {
-    internal class Credit
+    internal class About
     {
     }
 }

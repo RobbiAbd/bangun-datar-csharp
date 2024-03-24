@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BangunDatar.Views
 {
-    public partial class CreditForm : Form
+    public partial class AboutForm : Form
     {
-        public CreditForm()
+        public AboutForm()
         {
             InitializeComponent();
         }
