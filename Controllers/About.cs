@@ -8,5 +8,6 @@ namespace BangunDatar.Controllers
 {
     internal class About
     {
+        // Robbi Abdul Rohman -- 40622200023
     }
 }

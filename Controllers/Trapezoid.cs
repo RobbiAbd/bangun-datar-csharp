@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace BangunDatar.Controllers
 {
-    internal class Trapezoid
-    {
+    internal class Trapezoid : Shape
+    {   
+        public int a {  get; set; }
+        public int b { get; set; }
+        public int t { get; set; }
+       
+        public override double Width()
+        {
+            return 1/2 * t * (a + b);
+        }
     }
 }
+// Robbi Abdul Rohman -- 40622200023

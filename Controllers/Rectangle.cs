@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace BangunDatar.Controllers
 {
-    internal class Rectangle
+    internal class Rectangle : Shape
     {
+        public int p {  get; set; }
+        public int l { get; set; }
+
+        public override double Area()
+        {
+            return 2 * (p + l);
+        }
     }
 }
+// Robbi Abdul Rohman -- 40622200023
