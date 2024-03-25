@@ -33,7 +33,7 @@
             this.textLebar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelHasil = new System.Windows.Forms.Label();
             this.btnHitung = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -51,7 +51,7 @@
             // textPanjang
             // 
             this.textPanjang.Location = new System.Drawing.Point(108, 11);
-            this.textPanjang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textPanjang.Margin = new System.Windows.Forms.Padding(4);
             this.textPanjang.Name = "textPanjang";
             this.textPanjang.Size = new System.Drawing.Size(116, 21);
             this.textPanjang.TabIndex = 1;
@@ -59,7 +59,7 @@
             // textLebar
             // 
             this.textLebar.Location = new System.Drawing.Point(108, 73);
-            this.textLebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textLebar.Margin = new System.Windows.Forms.Padding(4);
             this.textLebar.Name = "textLebar";
             this.textLebar.Size = new System.Drawing.Size(116, 21);
             this.textLebar.TabIndex = 3;
@@ -86,16 +86,16 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Luas:";
             // 
-            // label4
+            // labelHasil
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(190, 137);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(14, 16);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "?";
+            this.labelHasil.AutoSize = true;
+            this.labelHasil.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHasil.Location = new System.Drawing.Point(190, 137);
+            this.labelHasil.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelHasil.Name = "labelHasil";
+            this.labelHasil.Size = new System.Drawing.Size(14, 16);
+            this.labelHasil.TabIndex = 5;
+            this.labelHasil.Text = "?";
             // 
             // btnHitung
             // 
@@ -105,12 +105,13 @@
             this.btnHitung.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHitung.ForeColor = System.Drawing.Color.White;
             this.btnHitung.Location = new System.Drawing.Point(108, 192);
-            this.btnHitung.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHitung.Margin = new System.Windows.Forms.Padding(4);
             this.btnHitung.Name = "btnHitung";
             this.btnHitung.Size = new System.Drawing.Size(117, 32);
             this.btnHitung.TabIndex = 6;
             this.btnHitung.Text = "Hitung";
             this.btnHitung.UseVisualStyleBackColor = false;
+            this.btnHitung.Click += new System.EventHandler(this.btnHitung_Click);
             // 
             // SquareForm
             // 
@@ -118,7 +119,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 554);
             this.Controls.Add(this.btnHitung);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.labelHasil);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textLebar);
             this.Controls.Add(this.label2);
@@ -126,7 +127,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SquareForm";
             this.Text = "SquareForm";
             this.ResumeLayout(false);
@@ -141,7 +142,7 @@
         private System.Windows.Forms.TextBox textLebar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelHasil;
         private System.Windows.Forms.Button btnHitung;
     }
 }

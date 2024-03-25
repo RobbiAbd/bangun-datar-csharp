@@ -8,11 +8,11 @@ namespace BangunDatar.Controllers
 {
     internal class Circle : Shape
     {
-        int r {  get; set; }
+        public int r {  get; set; }
 
         public override double Width()
         {
-            return Math.PI * r * r;
+            return Math.Round(Math.PI * r * r, 2);
         }
     }
 }

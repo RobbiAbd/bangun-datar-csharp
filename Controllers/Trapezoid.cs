@@ -14,7 +14,7 @@ namespace BangunDatar.Controllers
        
         public override double Width()
         {
-            return 1/2 * t * (a + b);
+            return 0.5 * t * (a + b);
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panelSide = new System.Windows.Forms.Panel();
             this.btnAbout = new System.Windows.Forms.Button();
             this.btnTrapesium = new System.Windows.Forms.Button();
@@ -40,14 +41,18 @@
             this.labelTitle = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelSide.SuspendLayout();
             this.panelTop.SuspendLayout();
             this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSide
             // 
             this.panelSide.BackColor = System.Drawing.Color.DimGray;
+            this.panelSide.Controls.Add(this.pictureBox1);
             this.panelSide.Controls.Add(this.btnAbout);
             this.panelSide.Controls.Add(this.btnTrapesium);
             this.panelSide.Controls.Add(this.btnLingkaran);
@@ -83,7 +88,7 @@
             this.btnTrapesium.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTrapesium.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTrapesium.ForeColor = System.Drawing.Color.White;
-            this.btnTrapesium.Location = new System.Drawing.Point(0, 210);
+            this.btnTrapesium.Location = new System.Drawing.Point(0, 260);
             this.btnTrapesium.Name = "btnTrapesium";
             this.btnTrapesium.Size = new System.Drawing.Size(200, 30);
             this.btnTrapesium.TabIndex = 5;
@@ -98,7 +103,7 @@
             this.btnLingkaran.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLingkaran.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLingkaran.ForeColor = System.Drawing.Color.White;
-            this.btnLingkaran.Location = new System.Drawing.Point(-3, 168);
+            this.btnLingkaran.Location = new System.Drawing.Point(-3, 218);
             this.btnLingkaran.Name = "btnLingkaran";
             this.btnLingkaran.Size = new System.Drawing.Size(200, 30);
             this.btnLingkaran.TabIndex = 4;
@@ -113,7 +118,7 @@
             this.btnSegitiga.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSegitiga.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSegitiga.ForeColor = System.Drawing.Color.White;
-            this.btnSegitiga.Location = new System.Drawing.Point(0, 132);
+            this.btnSegitiga.Location = new System.Drawing.Point(0, 182);
             this.btnSegitiga.Name = "btnSegitiga";
             this.btnSegitiga.Size = new System.Drawing.Size(200, 30);
             this.btnSegitiga.TabIndex = 3;
@@ -128,7 +133,7 @@
             this.btnPersegiPanjang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPersegiPanjang.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPersegiPanjang.ForeColor = System.Drawing.Color.White;
-            this.btnPersegiPanjang.Location = new System.Drawing.Point(0, 96);
+            this.btnPersegiPanjang.Location = new System.Drawing.Point(0, 146);
             this.btnPersegiPanjang.Name = "btnPersegiPanjang";
             this.btnPersegiPanjang.Size = new System.Drawing.Size(200, 30);
             this.btnPersegiPanjang.TabIndex = 2;
@@ -158,7 +163,7 @@
             this.btnPersegi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPersegi.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPersegi.ForeColor = System.Drawing.Color.White;
-            this.btnPersegi.Location = new System.Drawing.Point(0, 60);
+            this.btnPersegi.Location = new System.Drawing.Point(0, 110);
             this.btnPersegi.Name = "btnPersegi";
             this.btnPersegi.Size = new System.Drawing.Size(200, 30);
             this.btnPersegi.TabIndex = 0;
@@ -190,6 +195,7 @@
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelMain.Controls.Add(this.label1);
             this.panelMain.Controls.Add(this.label2);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(200, 25);
@@ -200,11 +206,33 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(264, 185);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 13);
+            this.label2.Size = new System.Drawing.Size(92, 21);
             this.label2.TabIndex = 0;
             this.label2.Text = "WELCOME";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(27, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(148, 92);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(194, 216);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label1.Size = new System.Drawing.Size(236, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Robbi Abdul Rohman - 40622200023";
             // 
             // Home
             // 
@@ -224,6 +252,7 @@
             this.panelTop.PerformLayout();
             this.panelMain.ResumeLayout(false);
             this.panelMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -242,6 +271,8 @@
         private System.Windows.Forms.Button btnTrapesium;
         private System.Windows.Forms.Button btnAbout;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

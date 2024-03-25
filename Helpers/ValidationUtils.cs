@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BangunDatar.Helpers
 {
-    internal static class Validation
+    internal static class ValidationUtils
     {
         public static bool checkIsEmpty(System.Windows.Forms.TextBox textBox)
         {

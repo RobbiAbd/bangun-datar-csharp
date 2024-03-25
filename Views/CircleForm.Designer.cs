@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnHitung = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelHasil = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textJariJari = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,17 +49,18 @@
             this.btnHitung.TabIndex = 27;
             this.btnHitung.Text = "Hitung";
             this.btnHitung.UseVisualStyleBackColor = false;
+            this.btnHitung.Click += new System.EventHandler(this.btnHitung_Click);
             // 
-            // label4
+            // labelHasil
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(183, 79);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(14, 16);
-            this.label4.TabIndex = 26;
-            this.label4.Text = "?";
+            this.labelHasil.AutoSize = true;
+            this.labelHasil.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHasil.Location = new System.Drawing.Point(183, 79);
+            this.labelHasil.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelHasil.Name = "labelHasil";
+            this.labelHasil.Size = new System.Drawing.Size(14, 16);
+            this.labelHasil.TabIndex = 26;
+            this.labelHasil.Text = "?";
             // 
             // label3
             // 
@@ -97,7 +98,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnHitung);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.labelHasil);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textJariJari);
             this.Controls.Add(this.label1);
@@ -112,7 +113,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnHitung;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelHasil;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textJariJari;
         private System.Windows.Forms.Label label1;
