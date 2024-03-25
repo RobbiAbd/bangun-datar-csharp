@@ -40,9 +40,8 @@
             this.panelTop = new System.Windows.Forms.Panel();
             this.labelTitle = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panelSide.SuspendLayout();
             this.panelTop.SuspendLayout();
             this.panelMain.SuspendLayout();
@@ -195,23 +194,12 @@
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panelMain.Controls.Add(this.label1);
             this.panelMain.Controls.Add(this.label2);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(200, 25);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(600, 425);
             this.panelMain.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(264, 185);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 21);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "WELCOME";
             // 
             // pictureBox1
             // 
@@ -223,16 +211,15 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // label2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(194, 216);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(236, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Robbi Abdul Rohman - 40622200023";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(264, 185);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 21);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "WELCOME";
             // 
             // Home
             // 
@@ -270,9 +257,8 @@
         private System.Windows.Forms.Button btnPersegiPanjang;
         private System.Windows.Forms.Button btnTrapesium;
         private System.Windows.Forms.Button btnAbout;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
